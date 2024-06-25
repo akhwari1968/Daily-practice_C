@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C\\V S\\\u8C03\u8BD5\u4E13\u7528\\",
+  "WorkspaceRootPath": "D:\\C\\Daily-practice_C\\V S\\\u8C03\u8BD5\u4E13\u7528\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE3D6D7C-7D72-4925-AC1F-33555B8E0970}|\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.vcxproj|D:\\C\\V S\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DE3D6D7C-7D72-4925-AC1F-33555B8E0970}|\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.vcxproj|D:\\C\\Daily-practice_C\\V S\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DE3D6D7C-7D72-4925-AC1F-33555B8E0970}|\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.vcxproj|solutionrelative:\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "\u8C03\u8BD5\u4E13\u7528.c",
-              "DocumentMoniker": "D:\\C\\V S\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c",
+              "DocumentMoniker": "D:\\C\\Daily-practice_C\\V S\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c",
               "RelativeDocumentMoniker": "\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c",
-              "ToolTip": "D:\\C\\V S\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c*",
-              "RelativeToolTip": "\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c*",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAWAAAA",
+              "ToolTip": "D:\\C\\Daily-practice_C\\V S\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c",
+              "RelativeToolTip": "\u8C03\u8BD5\u4E13\u7528\\\u8C03\u8BD5\u4E13\u7528.c",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-06-13T14:10:31.296Z",
               "EditorCaption": ""
