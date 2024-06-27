@@ -3,11 +3,9 @@
 int main()
 {
 	int n = 0;
-	int tmp = 0;
+	int tmp = 1;
 	
 	scanf("%d",&n);
-	
-	printf("%d\n",2);
 	
 	int i = 0;
 	
