@@ -1,3 +1,2 @@
 ﻿  调试专用.c
-D:\C\Daily-practice_C\V S\调试专用\调试专用\调试专用.c(15,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   调试专用.vcxproj -> D:\C\Daily-practice_C\V S\调试专用\x64\Debug\调试专用.exe

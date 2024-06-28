@@ -1,35 +1,41 @@
 #define  _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
-#include <string.h>
+#include <math.h>
 
 int main()
 {
-	char arr[81];
-	char arr1[81];//因为使用fgets函数，所以比要求多一个位置防止溢出
+	int n = 0;
+	int i = 0;
+	int sum = 0;
 
-	while (fgets(arr, sizeof(arr), stdin) != NULL)//根据输入情况决定是否结束程序，解决多行输入问题
-	{		
-		arr[strcspn(arr, "\n")] = '\0';//清理存储的多余\n
+	scanf_s("%d", &n);
 
-		int sz = strlen(arr);
-
-		int i = 0;
+	for (i = 1; i <= n; i++)//遍历1到n的所有数进行完数判断
+	{
 		int j = 0;
-		for (i = 0, j = 0; i < sz; i++)//遍历数组，不为空格放入另一个数组内
+		int factors[10000] = { 0 };//因子数组用于判断成功后的输出
+		int tmp = 0;
+		sum = 0;
+
+		for (j = 1; j < i; j++)//计算每一个数的因数并相加
 		{
-			if (arr[i] != ' ')
+			if (i % j == 0)
 			{
-				arr1[j] = arr[i];
-				j++;
+				sum += j;
+				factors[tmp++] = j;//此处tmp先使用后++，相当于多+了一次
 			}
 		}
-		arr1[j] = '\0';//当元素不到80时用\0封口
 
-		printf("%s\n", arr1);
-
-		memset(arr, '\0', sizeof(arr));//清理数组内容
-		memset(arr1, '\0', sizeof(arr1));//清理数组内容
+		if (sum == i)//完数的判断以及输出
+		{
+			printf("%d its factors are ", i);
+			for (j = 0; j < tmp; j++)//所有此处小于tmp而不是等于
+			{
+				printf("%d ", factors[j]);
+			}
+			printf("\n");
+		}
 	}
 
 	return 0;
