@@ -62,7 +62,7 @@ int main()
 	
 	fgets(arr, 200, stdin);//使用fgets函数输入避免scanf函数的缺陷
 	
-	arr[strcspn(arr, "\n")] = '\0';//移除输入时获取的空格
+	arr[strcspn(arr, "\n")] = '\0';//移除输入时获取的换行
 	
 	int sz = strlen (arr);
 	
