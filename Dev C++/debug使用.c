@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    float a = 0;
-    a = 55123 / 10000;
+    float a = 12345;
+    a /= 100;
     
-    printf("%.4f",a);
+    printf("%.2f",a);
     
     return 0;
 }
