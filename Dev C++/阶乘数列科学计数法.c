@@ -4,11 +4,11 @@ int main()
 {
 	int i = 1;
 	int j = 1;
-	long long sum = 0;
+	double sum = 0;
 	
 	for (i = 1;i <= 30;i++)
 	{
-		int mul = 1;
+		double mul = 1;
 		for (j = 1;j <= i;j++)
 		{
 			mul *= j;
@@ -17,7 +17,7 @@ int main()
 		sum += mul;
 	}
 	
-	printf("%lld",sum);
+	printf("%.2e\n",sum);
 	
 	return 0;
 }
