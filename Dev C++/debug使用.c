@@ -1,17 +1,23 @@
-#include<stdio.h>
-void main()
-{
- int i, j;
- double sum1 = 1, sum = 0;
- for (i = 1; i < 31; i++) 
- {
-  for (j = 1; j <= i; j++) 
-  {
-   sum1 *= j;
-  }
-  sum += sum1;
-  sum1 = 1;
- }
-  printf("%lf\n", sum);
- printf("%.2e\n", sum);
-}
+    #include<stdio.h>
+    double fact(int k)//先定义函数，免得声明
+    {
+     double sum=1;
+     int i;
+     for(i=1;i<=k;i++)
+     {
+          sum=sum*i;
+     }
+     return sum;//直接返回sum的值
+    }
+    int main()
+    {
+         int n,i;
+         double sum1=0;
+         scanf("%d",&n);
+         for(i=1;i<=n;i++)
+     {
+      sum1=sum1+1/fact(i);//各阶乘的倒数分之一的和
+     }
+     printf("sum=%.5lf",sum1);
+     return 0;
+    }
