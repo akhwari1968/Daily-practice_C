@@ -1,22 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-	int a,b,n;
+	int i = 0;
+	int left = 0;
+	int right = 0;
+	i = 1234;
 	
-	scanf("%d",&n);
-
-	for(int i=n-1;i>=0;i--)
-	{
+		left = i / 100;
+		right = i % 100;
 	
-	    if(i>=0)
-		{
-	        scanf("%d %d",&a,&b);
-	        printf("%d\n",a+b);
-	        continue;
-	
-	    }
-	}
-	
+	printf("%d",right);
 	return 0;
 }
