@@ -1,15 +1,11 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
-	int i = 0;
-	int left = 0;
-	int right = 0;
-	i = 1234;
+	char arr[] = {'a','b','c','d'};
+	printf("%d",strlen(arr));
 	
-		left = i / 100;
-		right = i % 100;
 	
-	printf("%d",right);
 	return 0;
 }
