@@ -2,21 +2,84 @@
 
 #include "contact.h"
 
-void initcontact(contact* pc)//初始化函数的实现
+////静态版本
+//void initcontact(contact* pc)//初始化函数的实现
+//{
+//	assert(pc);
+//	pc->conut = 0;
+//	memset(pc->data, 0, sizeof(pc->data));
+//}
+
+//动态版本
+int initcontact(contact* pc)//初始化函数的实现
 {
 	assert(pc);
 	pc->conut = 0;
-	memset(pc->data, 0, sizeof(pc->data));
+	pc->data = (peoinfo*)calloc(3,sizeof(peoinfo));
+	if (pc->data == NULL)
+	{
+		printf("initcontact:%s\n", strerror(errno));
+		return 1;
+	}
+	pc->capacity = default_sz;
+	return 0;
 }
 
+void destroycontact(contact* pc)//销毁通讯录
+{
+	assert(pc);
+	free(pc->data);
+	pc->data = NULL;
+}
+
+////静态版本
+//void addcontact(contact* pc)//增加联系人函数的实现
+//{
+//	assert(pc);
+//	if (pc->conut == max)
+//	{
+//		printf("通讯录已满，无法添加\n");
+//		return;
+//	}
+//
+//	printf("请输入名字:");
+//	scanf("%s", pc->data[pc->conut].name);
+//	printf("请输入年龄:");
+//	scanf("%d", &(pc->data[pc->conut].age));
+//	printf("请输入性别:");
+//	scanf("%s", &(pc->data[pc->conut].sex));
+//	printf("请输入电话:");
+//	scanf("%s", &(pc->data[pc->conut].tele));
+//	printf("请输入地址:");
+//	scanf("%s", &(pc->data[pc->conut].addr));
+//
+//	pc->conut++;
+//	printf("增加成功\n");
+//}
+
+
+void check(contact* pc)
+{
+	if (pc->conut == pc->capacity)//动态扩容
+	{
+		peoinfo* ptr = (peoinfo*)realloc(pc->data, (pc->capacity + inc_sz) * sizeof(peoinfo));
+		if (ptr == NULL)
+		{
+			printf("addcontact:%s\n", strerror(errno));
+		}
+		else
+		{
+			pc->data = ptr;
+			pc->capacity += inc_sz;
+			printf("增容成功\n");
+		}
+	}
+}
+//动态版本
 void addcontact(contact* pc)//增加联系人函数的实现
 {
 	assert(pc);
-	if (pc->conut == max)
-	{
-		printf("通讯录已满，无法添加\n");
-		return;
-	}
+	check(pc);
 
 	printf("请输入名字:");
 	scanf("%s", pc->data[pc->conut].name);
