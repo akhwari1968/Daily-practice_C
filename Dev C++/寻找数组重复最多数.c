@@ -9,7 +9,7 @@ int ji(int x,int(*p)[1000],int n,int m)
   {
     for (j = 0;j < m;j++)
     {
-      if (x == (*p+i)[j])
+      if (x == *(*(p+i)+j))
       {
         count++;
       }
@@ -32,37 +32,25 @@ int main()
   {
     for (j = 0;j < m;j++)
     {
-      scanf("%d ",arr[i][j]);
+      scanf("%d",&arr[i][j]);
     }
   }
-  int tmp = 0;
-  int tmp1 = 0;
-  int big_tmp = 0;
-  int the_num = 0;
-  int a = 0;
+  	int tmp = 0;
+  	int max_count = 0;
+	int most_frequent_num = arr[0][0];
   for (i = 0;i < n;i++)
   {
     for (j = 0;j < m;j++)
     {
       tmp = ji(arr[i][j],arr,n,m);
-      if (i != 0 || j != 0)
-      {
-        if (tmp1 <= tmp)
-      {
-        big_tmp = tmp;
-        the_num = arr[i][j];
-      }
-      else
-      {
-        big_tmp = tmp1;
-        the_num = a;
-      }
-      tmp1 = tmp;
-      a = arr[i][j];
-      }
+      if (tmp > max_count)
+        {
+        	max_count = tmp;
+        	most_frequent_num = arr[i][j];
+        }
     }
   }
 
-  printf("%d",the_num);
+  printf("%d",most_frequent_num);
   return 0;
 }
