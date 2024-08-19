@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\C\\Daily-practice_C\\V S\\contact\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC1BED5B-7CC6-4C4B-99A9-0054897824C7}|contact\\contact.vcxproj|D:\\C\\Daily-practice_C\\V S\\contact\\contact\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FC1BED5B-7CC6-4C4B-99A9-0054897824C7}|contact\\contact.vcxproj|solutionrelative:contact\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC1BED5B-7CC6-4C4B-99A9-0054897824C7}|contact\\contact.vcxproj|D:\\C\\Daily-practice_C\\V S\\contact\\contact\\contact.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FC1BED5B-7CC6-4C4B-99A9-0054897824C7}|contact\\contact.vcxproj|solutionrelative:contact\\contact.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC1BED5B-7CC6-4C4B-99A9-0054897824C7}|contact\\contact.vcxproj|D:\\C\\Daily-practice_C\\V S\\contact\\contact\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FC1BED5B-7CC6-4C4B-99A9-0054897824C7}|contact\\contact.vcxproj|solutionrelative:contact\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1BED5B-7CC6-4C4B-99A9-0054897824C7}|contact\\contact.vcxproj|D:\\C\\Daily-practice_C\\V S\\contact\\contact\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FC1BED5B-7CC6-4C4B-99A9-0054897824C7}|contact\\contact.vcxproj|solutionrelative:contact\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "contact.h",
               "DocumentMoniker": "D:\\C\\Daily-practice_C\\V S\\contact\\contact\\contact.h",
               "RelativeDocumentMoniker": "contact\\contact.h",
               "ToolTip": "D:\\C\\Daily-practice_C\\V S\\contact\\contact\\contact.h",
               "RelativeToolTip": "contact\\contact.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-13T07:57:50.302Z",
               "IsPinned": true,
@@ -40,13 +40,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "contact.c",
               "DocumentMoniker": "D:\\C\\Daily-practice_C\\V S\\contact\\contact\\contact.c",
               "RelativeDocumentMoniker": "contact\\contact.c",
               "ToolTip": "D:\\C\\Daily-practice_C\\V S\\contact\\contact\\contact.c",
               "RelativeToolTip": "contact\\contact.c",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAAAFQAAAAnAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-08-13T07:57:39.573Z",
               "IsPinned": true,
@@ -54,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "test.c",
               "DocumentMoniker": "D:\\C\\Daily-practice_C\\V S\\contact\\contact\\test.c",
               "RelativeDocumentMoniker": "contact\\test.c",
               "ToolTip": "D:\\C\\Daily-practice_C\\V S\\contact\\contact\\test.c",
               "RelativeToolTip": "contact\\test.c",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAHAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-08-13T07:57:28.941Z",
               "IsPinned": true,

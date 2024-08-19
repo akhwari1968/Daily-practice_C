@@ -10,6 +10,27 @@
 //	memset(pc->data, 0, sizeof(pc->data));
 //}
 
+void loadcontact(contact* pc)//加载文件的信息到通讯录中
+{
+	FILE* pfread = fopen("contact.txt", "rb");
+	if (pfread == NULL)
+	{
+		perror("loadcontact");
+		return;
+	}
+
+	peoinfo tmp = { 0 };
+	while (fread(&tmp, sizeof(peoinfo), 1, pfread) == 1)
+	{
+		check(pc);
+		pc->data[pc->conut] = tmp;
+		pc->conut++;
+	}
+
+	fclose(pfread);
+	pfread = NULL;
+}
+
 //动态版本
 int initcontact(contact* pc)//初始化函数的实现
 {
@@ -22,6 +43,7 @@ int initcontact(contact* pc)//初始化函数的实现
 		return 1;
 	}
 	pc->capacity = default_sz;
+	loadcontact(pc);//加载文件的信息到通讯录中
 	return 0;
 }
 
@@ -210,4 +232,24 @@ void sortcontact(contact* pc)//排序
 	assert(pc);
 	qsort(pc->data,pc->conut,sizeof(peoinfo), cmp_people_name);
 	printf("排序成功\n");
+}
+
+void savecontact(const contact* pc)//保存通讯录到文件
+{
+	assert(pc);
+	FILE* pfwrite = fopen("contact.txt", "wb");
+	if (pfwrite == NULL)
+	{
+		perror("savecontact");
+		return;
+	}
+
+	int i = 0;
+	for (i = 0; i < pc->conut; i++)
+	{
+		fwrite(pc->data + i, sizeof(peoinfo), 1, pfwrite);
+	}
+
+	fclose(pfwrite);
+	pfwrite = NULL;
 }

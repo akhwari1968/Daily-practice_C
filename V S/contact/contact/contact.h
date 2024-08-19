@@ -1,5 +1,6 @@
 #define  _CRT_SECURE_NO_WARNINGS 1
 
+#include <stdio.h>
 #include <string.h>
 #include <assert.h>
 #include <stdlib.h>
@@ -40,6 +41,10 @@ typedef struct contact//通讯录
 
 int initcontact(contact* pc);//初始化函数的声明
 
+void loadcontact(contact* pc);//加载文件的信息到通讯录中
+
+void savecontact(const contact* pc);//保存通讯录到文件
+
 void destroycontact(contact* pc);//销毁通讯录
 
 void addcontact(contact* pc);//增加联系人函数的声明
@@ -55,3 +60,5 @@ void searchcontact(contact* pc); //查找联系人
 void modifycontact(contact* pc);//修改联系人
 
 void sortcontact(contact* pc);//按名字排序联系人
+
+void check(contact* pc);//检查扩容
