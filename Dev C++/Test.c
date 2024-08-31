@@ -1,72 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
-//#include <math.h>
-//
-//int main()
-//{
-//    int n = 0;
-//    scanf("%d",&n);
-//    int a = 0;
-//    int b = 1;
-//    int c = 0;
-//
-//    while (1)
-//    {
-//        if (n == b)
-//        {
-//            printf("0\n");
-//            break;
-//        }
-//        else if (n < b)
-//        {
-//            if (abs(a - n) > abs(b - n))
-//            {
-//                printf("%d",abs(b - n));
-//            }
-//            else
-//            {
-//                printf("%d",abs(a - n));
-//            }
-//            break;
-//        }
-//
-//        c = a + b;
-//        a = b;
-//        b = c;
-//    }
-//
-//    return 0;
-//}
-
-#include <string.h>
-
+#include<stdio.h>
 int main()
 {
-    char arr[100];
-    char tmp[200];
-    gets(arr);
-    int i = 0;
-    int j = 0;
-    int len = strlen(arr);
-    for (i = 0;i < len;i++)
+    int k,a,b,c,d;
+    char s[100];
+    while(~(k=scanf("%d.%d.%d.%d",&a,&b,&c,&d)))//遇到错误时返回0取反为-1， 输入几个正确数据就返回几
     {
-         if (arr[i] != ' ')
-         {
-             tmp[j] = arr[i];
-             j++;
-         }
-         else if (arr[i] == ' ')
-         {
-             tmp[j] = '%';
-             j++;
-             tmp[j] = '2';
-             j++;
-             tmp[j] = '0';
-             j++;
-         }
+        gets(s);//吃掉输入错误的字符跟多出来的字符
+        if(s[0]!='\0')//如果有错误字符跟多余字符就输出N
+        {
+            printf("N\n");
+            continue;
+        }
+        else if(k<4)//如果没有错误字符，但是输入的正确数据不满四个就输出N
+        {
+            printf("N\n");
+            continue; 
+        }
+        else if(a>=0&&a<=255&&b>=0&&b<=255&&c>=0&&c<=255&&d>=0&&d<=255)//如果没有以上情况，当满足条件时输出Y，条件不满则N
+        printf("Y\n");
+        else
+        printf("N\n");
     }
-
-    printf("%s",tmp);
-
-    return 0;
 }

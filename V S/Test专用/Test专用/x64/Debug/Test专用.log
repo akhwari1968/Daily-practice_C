@@ -1,2 +1,5 @@
 ﻿  Test.c
-  Test专用.vcxproj -> D:\C\Daily-practice_C\V S\Test专用\x64\Debug\Test专用.exe
+D:\C\Daily-practice_C\V S\Test专用\Test专用\Test.c(9,12): warning C4013: “gets”未定义；假设外部返回 int
+D:\C\Daily-practice_C\V S\Test专用\Test专用\Test.c(9,25): warning C4047: “!=”:“int”与“void *”的间接级别不同
+D:\C\Daily-practice_C\V S\Test专用\Test专用\Test.c(15,17): error C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\C\Daily-practice_C\V S\Test专用\Test专用\Test.c(20,21): error C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
