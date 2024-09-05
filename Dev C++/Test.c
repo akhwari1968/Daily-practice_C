@@ -44,7 +44,10 @@ int main()
 		return 0;
 	}
 	
-	
+	for (i = 0;i < M;i++)
+	{
+		
+	}
 	
 	return 0;
 }
