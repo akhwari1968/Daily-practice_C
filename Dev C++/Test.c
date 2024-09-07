@@ -1,52 +1,24 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-	int T = 0;
-	int M = 0;
-	int arr[100][2];
-	
-	scanf("%d %d",&T,&M);
-	int i = 0;
-	for (i = 0;i < M;i++)
+	int n;
+	scanf("%d",&n);
+	int i,j;
+	for(i = 2;i <= n;i++)
 	{
-		for (int j = 0;j < 2;j++)
+		for(j = 2;j <= sqrt(i);j++)
 		{
-			scanf("%d",&arr[i][j]);
+			if (i % j == 0)
+			{
+				break;
+			}
+			if (j > sqrt(i))
+			{
+				printf("%d\n",i);
+			}
 		}
-	}
-	
-	/*for (i = 0;i < M;i++)
-	{
-		for (int j = 0;j < 2;j++)
-		{
-			printf("%d",arr[i][j]);
-		}
-		printf("\n");
-	}*/
-
-	int sumv = 0;
-	int sumt = 0;
-	
-	for (i = 0;i < M;i++)
-	{
-		sumt += arr[i][0];
-	}
-	
-	if (sumt < T)
-	{
-		for (i = 0;i < M;i++)
-		{
-			sumv += arr[i][1];
-		}
-		printf("%d",sumv);
-		
-		return 0;
-	}
-	
-	for (i = 0;i < M;i++)
-	{
-		
 	}
 	
 	return 0;
