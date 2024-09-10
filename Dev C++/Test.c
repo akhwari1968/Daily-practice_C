@@ -1,24 +1,33 @@
 #include <stdio.h>
-#include <math.h>
+#include <string.h>
 
 int main()
 {
-	int n;
-	scanf("%d",&n);
-	int i,j;
-	for(i = 2;i <= n;i++)
+	char arr[101];
+	gets(arr);
+	
+	int left = 0;
+	int right = ((strlen(arr)) - 1);
+	int tmp = 0;
+	
+	while (1)
 	{
-		for(j = 2;j <= sqrt(i);j++)
+		if (left == right || left > right)
 		{
-			if (i % j == 0)
-			{
-				break;
-			}
-			if (j > sqrt(i))
-			{
-				printf("%d\n",i);
-			}
+			break;
 		}
+		tmp = arr[left];
+		arr[left] = arr[right];
+		arr[right] = tmp;
+		
+		left++;
+		right--;
+	}
+	
+	int i = 0;
+	for (i = 0;i < strlen(arr);i++)
+	{
+		printf("%c",arr[i]);
 	}
 	
 	return 0;
