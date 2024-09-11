@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
-	printf("test");
+	printf("%d %d %d %d %d",sizeof(int),sizeof(char),sizeof(float),sizeof(double),sizeof(long long));
 	
 	return 0;
 }
