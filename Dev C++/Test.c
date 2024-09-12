@@ -2,7 +2,15 @@
 
 int main()
 {
-	printf("%d %d %d %d %d",sizeof(int),sizeof(char),sizeof(float),sizeof(double),sizeof(long long));
+	int i = 0;
+	int sum = 0;
+	
+	for (i = 1;i < 1001;i++)
+	{
+	sum += i;
+	}
+	
+	printf("%d",sum);
 	
 	return 0;
 }
