@@ -3,11 +3,13 @@
 int main()
 {
 	int i = 0;
+	int n = 0;
 	int sum = 0;
+	scanf("%d",&n);
 	
-	for (i = 1;i < 1001;i++)
+	for (i = 1;i <= n;i++)
 	{
-	sum += i;
+		sum += i;
 	}
 	
 	printf("%d",sum);
