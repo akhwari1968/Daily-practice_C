@@ -9,7 +9,10 @@ int main()
 	
 	for (i = 1;i <= n;i++)
 	{
-		sum += i;
+		if ((i % 7) == 0)
+		{
+			sum += i;
+		}
 	}
 	
 	printf("%d",sum);
