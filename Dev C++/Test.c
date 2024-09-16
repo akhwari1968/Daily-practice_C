@@ -7,12 +7,17 @@ int main()
 	scanf("%d",&x);
 	
 	int i = 0;
-	for (i = 1;i <= (x / 2);i++)
+	for (i = 1;i <= x;i++)
 	{
-		if (x % i == 0)
+		printf("%d ",i);
+		for (int j = 1;j < i;j++)
 		{
-			printf("%d ",i);
+			if ((i % j) == 0)
+			{
+				printf("%d ",j);
+			}
 		}
+		printf("\n");
 	}
 	
 	return 0;
